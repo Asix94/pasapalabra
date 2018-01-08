@@ -29,8 +29,8 @@
 	var answer = "";
 
 	/* tiempo de ambos jugadores */
-	var tiempoA = 10;
-	var tiempoN = 10;
+	var tiempoA = 130;
+	var tiempoN = 130;
 
 	/* variable para controlar el tiempo de ambos jugadores */ 
 	var tA;
