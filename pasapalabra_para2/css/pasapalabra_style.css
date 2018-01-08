@@ -1,0 +1,282 @@
+.bolas{
+	height: 42px; 
+	width: 42px; 
+	border-radius: 50%; 
+	background: radial-gradient(blue, blue, white);
+}
+
+.cabezera{
+
+}
+
+.juegoA{
+	display: none;
+}
+
+.juegoN{
+	display: none;
+}
+
+.resultadoA{
+	display: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 20px;
+	font-family: Arial;
+}
+
+.resultadoN{
+	display: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 20px;
+	font-family: Arial;
+}
+
+.letra{
+	color: white; 
+	font-family: Arial; 
+	font-size: 30px; 
+	text-align: center;
+}
+
+.fondo{
+	background-color: #0000CD;
+}
+
+.pt20{
+	padding-top: 20px;
+}
+
+.start{
+	margin-top: 180px;
+}
+
+.nombreranking{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-top: 75px;
+	display: none;
+}
+
+.ranking{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-top: 75px;
+	display: none;
+	
+}
+
+.cerrar{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-top: 75px;
+	display: none;
+}
+
+.cuadro{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 20px;
+}
+
+.botonps{
+	background-color: blue; 
+	border-radius: 8px;
+	color: white;
+}
+
+.correcto{
+	margin-top: 250px;
+	display: none;
+	color: green;
+}
+
+.incorrecto{
+	margin-top: 250px;
+	display: none;
+	color: red;
+}
+
+.tiempoA{
+	height: 92px; 
+	width: 92px; 
+	border-radius: 50%; 
+	background: radial-gradient(blue, blue, white);
+	text-align: center;
+	font-family: Arial; 
+	font-size: 30px;
+	color: white;
+}
+
+.tiempoN{
+	height: 92px; 
+	width: 92px; 
+	border-radius: 50%; 
+	background: radial-gradient(blue, blue, white);
+	text-align: center;
+	font-family: Arial; 
+	font-size: 30px;
+	color: white;
+}
+
+.contadorA{
+	height: 50px; 
+	width: 100px;  
+	border-radius: 15px;
+	text-align: center;
+	font-family: Arial;
+	font-size: 30px; 
+	color: white;
+	padding-top: 5px;
+}
+
+.contadorN{
+	height: 50px; 
+	width: 100px;  
+	border-radius: 15px;
+	text-align: center;
+	font-family: Arial;
+	font-size: 30px; 
+	color: white;
+	padding-top: 5px;
+}
+
+.cuentaatras{
+	padding-top: 25px;
+}
+
+.letraA{
+	margin-right: 3px;
+	margin-top: -28px;
+}
+
+.letraB{
+	margin-left: 96px;
+	margin-top: -66px;
+}
+
+.letraC{
+	margin-left: 195px;
+	margin-top: -56px;
+}
+
+.letraD{
+	margin-left: 281px;
+	margin-top: -46px;
+}
+
+.letraE{
+	margin-left: 356px;
+	margin-top: -34px;
+}
+
+.letraF{
+	margin-left: 411px;
+	margin-top: -28px;
+}
+
+.letraG{
+	margin-left: 443px;
+	margin-top: -23px;
+}
+
+.letraH{
+	margin-left: 453px;
+	margin-top: -20px;
+}
+
+.letraI{
+	margin-left: 436px;
+	margin-top: -20px;
+}
+
+.letraJ{
+	margin-left: 398px;
+	margin-top: -26px;
+}
+
+.letraK{
+	margin-left: 346px;
+	margin-top: -31px;
+}
+
+.letraL{
+	margin-left: 275px;
+	margin-top: -37px;
+}
+
+.letraM{
+	margin-left: 190px;
+	margin-top: -47px;
+}
+
+.letraN{
+	margin-left: 93px;
+	margin-top: -57px;
+}
+
+.letraNN{
+	margin-right: 3px;
+	margin-top: -68px;
+}
+
+.letraO{
+	margin-right: 109px;
+	margin-top: -78px;
+}
+
+.letraP{
+	margin-right: 207px;
+	margin-top: -91px;
+}
+
+.letraQ{
+	margin-right: 298px;
+	margin-top: -104px;
+}
+
+.letraR{
+	margin-right: 369px;
+	margin-top: -113px;
+}
+
+.letraS{
+	margin-right: 417px;
+	margin-top: -117px;
+}
+
+.letraT{
+	margin-right: 443px;
+	margin-top: -123px;
+}
+
+.letraU{
+	margin-right: 445px;
+	margin-top: -124px;
+}
+
+.letraV{
+	margin-right: 422px;
+	margin-top: -123px;
+}
+
+.letraW{
+	margin-right: 375px;
+	margin-top: -122px;
+}
+
+.letraX{
+	margin-right: 300px;
+	margin-top: -115px;
+}
+
+.letraY{
+	margin-right: 208px;
+	margin-top: -105px;
+}
+
+.letraZ{
+	margin-right: 107px;
+	margin-top: -91px;
+}

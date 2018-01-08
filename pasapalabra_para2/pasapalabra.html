@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pasapalabra</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/pasapalabra_style.css">
+</head>
+<body style="background-color: #58B3FC;">
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div style="height: 100vh; border: solid 5px #034FF8;" class="col-md-5 col-lg-5">
+				
+				<div class="started-template" style="margin-top: 25%;" id="cabezeraA">
+					<h1>Pasapalabra</h1>
+					<p class="lead">Juega con la ruleta de las palabras!</p>
+					<p class="lead">En cada letra tendras una pregunta. deberas responder con la palabra correcta. La palabra tendra que empezar por la letra en la que estas y ¡cuidado! no olvides escribir la tilde o la dieresis cuando sea necesario, porque si no, no acertaras.</p>
+					<p class="lead">¡Suerte, y a jugar!</p>
+				</div>
+
+				<div align="center" class="pt20 row juegoA" id="juegoA">
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraA">A</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraB">B</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraC">C</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraD">D</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraE">E</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraF">F</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraG">G</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraH">H</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraI">I</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraJ">J</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraK">K</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraL">L</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraM">M</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraN">N</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraNN">Ñ</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraO">O</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraP">P</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraQ">Q</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraR">R</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraS">S</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraT">T</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraU">U</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraV">V</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraW">W</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraX">X</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraY">Y</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="AletraZ">Z</p></div>
+
+					<div align="center" class="cuadro col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1" id="cuadro" style="background: radial-gradient(white, #034FF8); margin-top: 15px;">
+						<div id="tableroA">
+							<button class="botonps" onclick="comprobar()" id="comprobarA">Comprobar</button>
+							<p id="preguntaA"></p>
+							<input type="textA" id="textoA">
+							<button class="botonps" onclick="pasarpalabra()" id="pasarpalabraA">pasaPalabra</button>
+							<br/><br>
+						</div>
+						<div id="resultadoA" class="resultadoA">
+						
+						</div>
+					</div>
+
+					<div class="col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2 col-sm-4 col-sm-offset-2 col-xs-4 col-xs-offset-2">
+						<p id="tiempoA" class="tiempoA cuentaatras" style="background: radial-gradient(#034FF8, #034FF8, white); margin-top: 15px">130</p>
+					</div>
+
+					<div class="col-md-4 col-lg-4 col-sm-4 col-xs-4" style="margin-top: 35px;">
+						<p id="contadorA" class="contadorA" style="background-color: #034FF8">0</p>
+					</div>
+
+				</div>
+
+			</div>
+			
+			<div class="col-md-2 col-lg-2">
+				
+				<div style="margin-top: 250px;" align="center" class="start" id="start">
+					<button class="botonps btn btn-lg" onclick="start()">Jugar</button>
+				</div>
+				
+				<div align="center" id="correcto" class="correcto">
+					<p class="lead">¡Correcto!</p>
+				</div>
+
+				<div align="center" id="incorrecto" class="incorrecto">
+					<p class="lead">¡Incorrecto!</p>
+					<p id="respuestaI"></p>
+					<p></p>
+				</div>
+
+				<div align="center" class="nombreranking" id="nombreranking">
+					<p>Indica tu nombre para entrar en el ranking, si no introduces el nombre no entraras en el ranking</p>
+					<p>Nombre del jugador Azul</p>
+					<input type="text" name="nameA" id="nameA">
+					<p>Nombre del jugador Naranja</p>
+					<input type="text" name="nameN" id="nameN">
+					<button class="botonps" onclick="rankings()">Aceptar</button>
+				</div>
+
+				<div align="center" class="ranking" id="ranking">
+					<p id="puntuacion"></p>
+					<p id="rank"></p>
+					<div id="tablaranking"></div>
+					<button class="botonps" onclick="returngames()">Volver a jugar</button>
+					<button class="botonps" onclick="fin()">Cerrar</button>
+				</div>
+
+				<div align="center" class="cerrar" id="cerrar">
+					<p>Fin del juego</p>
+				</div>
+
+			</div>
+
+			<div style="height: 100vh; border: solid 5px #F67316;" class="col-md-5 col-lg-5">
+				
+				<div id="cabezeraN">
+					<img src="cristian.jpg" style="height: 100%; width: 100%;">
+				</div>
+
+				<div align="center" class="pt20 row juegoN" id="juegoN">
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraA">A</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraB">B</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraC">C</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraD">D</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraE">E</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraF">F</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraG">G</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraH">H</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraI">I</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraJ">J</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraK">K</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraL">L</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraM">M</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraN">N</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraNN">Ñ</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraO">O</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraP">P</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraQ">Q</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraR">R</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraS">S</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraT">T</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraU">U</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraV">V</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraW">W</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraX">X</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraY">Y</p></div>
+					<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"><p class="letra bolas" id="NletraZ">Z</p></div>
+					
+					<div align="center" class="cuadro col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1" id="cuadro" style="background: radial-gradient(white, #F67316); margin-top: 15px;">
+						<div id="tableroN">
+							<button class="botonps" onclick="comprobar()" id="comprobarN">Comprobar</button>
+							<p id="preguntaN"></p>
+							<input type="textN" id="textoN">
+							<button class="botonps" onclick="pasarpalabra()" id="pasarpalabraN">pasaPalabra</button>
+							<br/><br>
+						</div>
+						<div id="resultadoN" class="resultadoN">
+						
+						</div>
+					</div>
+
+					<div class="col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2 col-sm-4 col-sm-offset-2 col-xs-4 col-xs-offset-2">
+						<p id="tiempoN" class="tiempoN cuentaatras" style="background: radial-gradient(#F67316, #F67316, white); margin-top: 15px">130</p>
+					</div>
+
+					<div class="col-md-4 col-lg-4 col-sm-4 col-xs-4" style="margin-top: 35px;">
+						<p id="contadorN" class="contadorN" style="background-color: #F67316">0</p>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+<script src="js/pasapalabra_style.js"></script>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
