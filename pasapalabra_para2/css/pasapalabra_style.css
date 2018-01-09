@@ -5,27 +5,11 @@
 	background: radial-gradient(blue, blue, white);
 }
 
-.cabezera{
-
-}
-
-.juegoA{
+.display{
 	display: none;
 }
 
-.juegoN{
-	display: none;
-}
-
-.resultadoA{
-	display: none;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-radius: 20px;
-	font-family: Arial;
-}
-
-.resultadoN{
+.resultado{
 	display: none;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -41,7 +25,7 @@
 }
 
 .fondo{
-	background-color: #0000CD;
+	background-color: #58B3FC;
 }
 
 .pt20{
@@ -98,7 +82,7 @@
 	color: red;
 }
 
-.tiempoA{
+.tiempo{
 	height: 92px; 
 	width: 92px; 
 	border-radius: 50%; 
@@ -109,29 +93,7 @@
 	color: white;
 }
 
-.tiempoN{
-	height: 92px; 
-	width: 92px; 
-	border-radius: 50%; 
-	background: radial-gradient(blue, blue, white);
-	text-align: center;
-	font-family: Arial; 
-	font-size: 30px;
-	color: white;
-}
-
-.contadorA{
-	height: 50px; 
-	width: 100px;  
-	border-radius: 15px;
-	text-align: center;
-	font-family: Arial;
-	font-size: 30px; 
-	color: white;
-	padding-top: 5px;
-}
-
-.contadorN{
+.contador{
 	height: 50px; 
 	width: 100px;  
 	border-radius: 15px;
@@ -146,137 +108,36 @@
 	padding-top: 25px;
 }
 
-.letraA{
-	margin-right: 3px;
-	margin-top: -28px;
+.border{
+	height: 100vh; 
+	border: solid 5px;
 }
 
-.letraB{
-	margin-left: 96px;
-	margin-top: -66px;
+.borderA{
+	border-color: #034FF8;
 }
 
-.letraC{
-	margin-left: 195px;
-	margin-top: -56px;
+.borderN{
+	border-color: #F67316;
 }
 
-.letraD{
-	margin-left: 281px;
-	margin-top: -46px;
+.mt140{
+	margin-top: 140px;
 }
 
-.letraE{
-	margin-left: 356px;
-	margin-top: -34px;
+.mt35{
+	margin-top: 35px;
 }
 
-.letraF{
-	margin-left: 411px;
-	margin-top: -28px;
+.mt15{
+	margin-top: 15px;
 }
 
-.letraG{
-	margin-left: 443px;
-	margin-top: -23px;
+.mt250{
+	margin-top: 250px;
 }
 
-.letraH{
-	margin-left: 453px;
-	margin-top: -20px;
-}
-
-.letraI{
-	margin-left: 436px;
-	margin-top: -20px;
-}
-
-.letraJ{
-	margin-left: 398px;
-	margin-top: -26px;
-}
-
-.letraK{
-	margin-left: 346px;
-	margin-top: -31px;
-}
-
-.letraL{
-	margin-left: 275px;
-	margin-top: -37px;
-}
-
-.letraM{
-	margin-left: 190px;
-	margin-top: -47px;
-}
-
-.letraN{
-	margin-left: 93px;
-	margin-top: -57px;
-}
-
-.letraNN{
-	margin-right: 3px;
-	margin-top: -68px;
-}
-
-.letraO{
-	margin-right: 109px;
-	margin-top: -78px;
-}
-
-.letraP{
-	margin-right: 207px;
-	margin-top: -91px;
-}
-
-.letraQ{
-	margin-right: 298px;
-	margin-top: -104px;
-}
-
-.letraR{
-	margin-right: 369px;
-	margin-top: -113px;
-}
-
-.letraS{
-	margin-right: 417px;
-	margin-top: -117px;
-}
-
-.letraT{
-	margin-right: 443px;
-	margin-top: -123px;
-}
-
-.letraU{
-	margin-right: 445px;
-	margin-top: -124px;
-}
-
-.letraV{
-	margin-right: 422px;
-	margin-top: -123px;
-}
-
-.letraW{
-	margin-right: 375px;
-	margin-top: -122px;
-}
-
-.letraX{
-	margin-right: 300px;
-	margin-top: -115px;
-}
-
-.letraY{
-	margin-right: 208px;
-	margin-top: -105px;
-}
-
-.letraZ{
-	margin-right: 107px;
-	margin-top: -91px;
+.imagen{
+	height: 100%; 
+	width: 100%;
 }

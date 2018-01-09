@@ -149,6 +149,7 @@
 
 			if (correctA + incorrectA == questions.length && correctN + incorrectN == questions.length) {
 
+				jugador = -1;
 				stopCount();
 				document.getElementById("correcto").setAttribute("style", "display:none;");
 				document.getElementById("incorrecto").setAttribute("style", "display:none;");
@@ -195,6 +196,7 @@
 
 			if (correctN + incorrectN == questions.length && correctA + incorrectA == questions.length) {
 
+				jugador = -1;
 				stopCount();
 				document.getElementById("correcto").setAttribute("style", "display:none;");
 				document.getElementById("incorrecto").setAttribute("style", "display:none;");
@@ -311,7 +313,16 @@
 
 		stopCount();
 
-		document.getElementById("rank").innerHTML = "No has acabado el juego, pero terminaste con un total de " + correctA + " preguntas acertadas, y un total de " + incorrectA + " preguntas falladas.";
+		document.getElementById("correcto").setAttribute("style", "display:none;");
+		document.getElementById("incorrecto").setAttribute("style", "display:none;");
+		document.getElementById("resultadoA").innerHTML = "Felicidades, has tenido un total de " + correctA + " preguntas acertadas, y un total de " + incorrectA + " preguntas falladas.";
+		document.getElementById("resultadoN").innerHTML = "Felicidades, has tenido un total de " + correctN + " preguntas acertadas, y un total de " + incorrectN + " preguntas falladas.";
+		document.getElementById("tableroA").setAttribute("style", "display:none;");
+		document.getElementById("tableroN").setAttribute("style", "display:none;");
+		document.getElementById("resultadoA").setAttribute("style", "display:block;");
+		document.getElementById("resultadoN").setAttribute("style", "display:block;");
+		
+		document.getElementById("rank").innerHTML = "Ninguno de los dos jugadores ha acabado a tiempo el rosco";
 
 		document.getElementById("ranking").setAttribute("style", "display:block;");
 
@@ -335,8 +346,8 @@
 		document.getElementById("textoA").value = "";
 		document.getElementById("textoN").value = "";
 
-		document.getElementById("tiempoA").innerHTML = 130;
-		document.getElementById("tiempoN").innerHTML = 130;
+		document.getElementById("tiempoA").innerHTML = 200;
+		document.getElementById("tiempoN").innerHTML = 200;
 
 		document.getElementById("contadorA").innerHTML = 0;
 		document.getElementById("contadorN").innerHTML = 0;
@@ -348,8 +359,8 @@
 		incorrectN = 0;
 		numA = 0;
 		numN = 0;
-		tiempoA = 130;
-		tiempoN = 130;
+		tiempoA = 200;
+		tiempoN = 200;
 
 		jugador = 0;
 
@@ -431,7 +442,11 @@
 		if (jugador == 0) {
 	    	clearTimeout(tA);
 		}
+		else if(jugador == 1){
+			clearTimeout(tN);
+		}
 		else{
+			clearTimeout(tA);
 			clearTimeout(tN);
 		}
 	}
